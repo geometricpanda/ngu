@@ -22,7 +22,7 @@ export class LoremGeneratedPageComponent implements OnInit {
 
   ngOnInit() {
     if (this.loremData.error) {
-      throw new Error(`Error: ${this.router.url}\nThere was an error generating this page`);
+      throw new Error(`${this.router.url}\nThere was an error generating this page`);
     }
   }
 
