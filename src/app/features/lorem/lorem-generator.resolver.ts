@@ -1,8 +1,8 @@
 import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
 import {catchError, map, Observable, of} from 'rxjs';
 import {Resolve, ActivatedRouteSnapshot} from '@angular/router';
-import type {Lorem} from '../../common/services';
 import {LoremService} from '../../common/services';
+import type {Lorem} from '../../common/services';
 
 export interface LoremData {
   data?: Lorem;
