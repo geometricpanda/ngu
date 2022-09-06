@@ -1,0 +1,11 @@
+<ng-container *ngIf="!loremData.error">
+  <h1>{{loremData.data?.length}} sentence(s).</h1>
+
+  <p *ngFor="let line of loremData?.data">
+    {{line}}
+  </p>
+</ng-container>
+
+<ng-container *ngIf="loremData.error">
+  <h1>Oops it looks like something went wrong</h1>
+</ng-container>
